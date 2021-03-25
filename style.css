@@ -1,197 +1,289 @@
-body{
-	font-family: 'Montserrat', sans-serif;
-}
-p{
-	letter-spacing: 0.8px;
-	line-height: 150%;
-}
-.container{
-	width: 1080;
-	margin: 0 auto;
-	padding: 0 100px 0 100px;
-}
-.header{
-	background-color: #ffffff;
-	border: none;
-    display: block;
-    overflow: auto;
-}
-.logo {
-	float: left;
-	padding: 33px 0px 33px 0;
-	overflow: auto;
-}
-.menu ul{
-	float: right;
-	padding: 33px 0 33px 0;
-}
-.menu ul li{
-	display: inline-block;
-	position: relative;
-}
-.menu ul li a{
-	text-decoration: none;
-	color: black;
-	padding: 10px;
-	font-size: 20px;
-}
-/*Batas Suci Header*/
+@import url("https://rsms.me/inter/inter.css");
 
-/*CSS About*/
-.jumbotron{
-	background-color: #ffffff; 
+html {
+  font-family: "Inter", sans-serif;
 }
-.muka{
-	display: block;
-	padding: 40px 0 5px 0;
-}
-.muka ul{
-	display: inline-block;
-}
-.muka ul li{
-	display: block;
-	text-decoration: none;
-}
-.muka-gambar2-1{
-	margin-bottom: 25px;
-}
-/*Batas Akhir CSS About*/
-
-/*CSS Portfolio*/
-
-.jumbotron{
-	margin-top: 120px;
-}
-.jumbotron h2{
-	letter-spacing: 0.8px;
-	line-height: 150%;
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
-.jumbotron h2 a{
-	color: #28ADDD;
-	text-decoration: none;
+:root {
+  --primary-color: #6685e3;
+  --sec-color: #ecf0fd;
+
+  --bg-color: #ffffff;
+  --bg-card: #ffffff;
+  --font-color: #0f0f0f;
+  --font-color-sc: #767676;
+
+  --dark-bg-color: #000000;
+  --dark-bg-card: #222222;
+  --dark-font-color: #ffffff;
+  --dark-font-color-sc: #ebebeb;
 }
 
-.lets-talk{
-	background-color: #000000;
-  	border: none;
-  	color: white;
-  	font-weight: bold;
-  	font-size: 20px;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	text-transform: uppercase;
-  	display: inline-block;
-  	margin: 20px 0 100px 0;
- 	 cursor: pointer;
+:root {
+  --unit: 16px;
+  --hr-weight: 1.5px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.01em;
 }
 
-.lets-talk a{
-	text-decoration: none;
-	color: white;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.content{
-	display: grid;
-	grid-gap: 35px;
-	grid-template-columns: auto auto auto;
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-.dash{
-	height: 2px;
-	width: 150px;
-	background-color: black;
-}
-
-.thumbnail h3 a{
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-/*Batas Akhir CSS Portfolio*/
-
-/*Batas Suci Footer*/
-.footer-line{
-	background-color: #000000;
-	height: 3px;
-	margin: 195px 0 20px 0;
-}
-.footer-container {
-  display: grid;
-  grid-template-columns: auto 250px 250px 250px;
-}
-.grid-item {
-  background-color: white;
-  border: 3px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.grid-item1{
-	background-color: black;
-  color: white;
-  border: 3px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;	
-}
-
-.grid-item a{
-	text-decoration: none;
-	color: black;
-}
-.footer-real p{
-	min-height: 20px;
-	background-color: #ffffff;
-	padding: 20px;
-	text-align: center;
-}
-
-/*Animation*/
 
 a {
-	position: relative;
-	text-decoration: none;
-	transition: color .4s ease-out;
-}
-
-a::after {
-	border-top: .1em solid;
-	content: "";
-	position: absolute;
-		right: 100%;
-		bottom: .10em;
-		left: 0;
-	transition: right .4s cubic-bezier(0,.5,0,1);
+  color: var(--font-color);
+  position: relative;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
 }
 
 a:hover {
-	text-decoration: none;
-}
-
-a:hover::after {
-	animation: anchor-underline 1s cubic-bezier(0,.5,0,1) infinite;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 @keyframes anchor-underline {
-	0%, 10%{
-		left: 0;
-		right: 100%;
-	}
-	40%, 60%{
-		left: 0;
-		right: 0;
-	}
-	90%, 100% {
-		left: 100%;
-		right: 0;
-	}
+  0%,
+  10% {
+    left: 0;
+    right: 100%;
+  }
+  40%,
+  60% {
+    left: 0;
+    right: 0;
+  }
+  90%,
+  100% {
+    left: 100%;
+    right: 0;
+  }
 }
 
-img:hover{
-	box-shadow: 10px 10px 15px rgba(0, 0, 0,.2);
+p a {
+  text-decoration: underline rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.022em;
+  line-height: 56px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.019em;
+  line-height: 34px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  letter-spacing: -0.014em;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h3 > a[href] {
+  text-decoration: none;
+}
+
+h3 > a::after {
+  border-top: 0.1em solid;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.1em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+h3 > a:hover::after {
+  animation: anchor-underline 1s cubic-bezier(0, 0.5, 0, 1) infinite;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  letter-spacing: -0.011em;
+  line-height: 22px;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.row > * {
+  width: 100%;
+  max-width: 888px;
+}
+
+main,
+.work article {
+  animation: transitionIn 500ms;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: var(--primary-color) !important;
+  transition: 200ms ease;
+  margin: 0;
+  max-width: 30px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li:first-child {
+  margin-left: 0;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a::after {
+  border-top: 0.1em solid;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.1em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+.navbar ul li a:hover::after {
+  animation: anchor-underline 1s cubic-bezier(0, 0.5, 0, 1) infinite;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0;
+}
+
+.work .project:nth-child(1) {
+  margin-left: 0;
+}
+
+.work .project {
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0.5px solid rgb(221, 221, 221);
+}
+
+.work .project-thumbnail {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  max-height: 250px;
+}
+
+.work .project-title {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.category {
+  color: var(--font-color);
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background-color: #dce4ff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .social-media ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .social-media ul li:first-child {
+  margin: 10px 0;
+  margin-left: 0;
+}
+
+.footer .social-media ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+.footer .social-media ul li a svg {
+  fill: var(--dark-bg-card);
+  transition: all 300ms;
+}
+
+.footer .social-media ul li a svg:hover {
+  fill: var(--primary-color);
+}
+
+/* ABOUT PAGE */
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-content .about-my-self {
+  margin-right: 50px;
+}
+
+.about-content .about-photo .profile-photo {
+  width: 200px;
 }
